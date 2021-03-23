@@ -47,6 +47,7 @@ Dans le cas où 'url' est vide, il affiche "URL is missing in queries !"
 
 ## DEMO
 
+Affiche le site de github (regardez l'url)
 Déployé sur heroku => https://protected-woodland-06129.herokuapp.com/?url=https://github.com
 
 <br>
