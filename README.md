@@ -36,10 +36,18 @@ $ git push heroku main
 
 ## Les endpoints
 
+### GET /
+```
+{
+    url : <L'url d'un site>
+}
+```
+Affiche le contenu du site<br>
+Dans le cas où 'url' est vide, il affiche "URL is missing in queries !"
 
 ## DEMO
 
-Déployé sur heroku => https://xxxxxxxxx.herokuapp.com/
+Déployé sur heroku => https://protected-woodland-06129.herokuapp.com/?url=https://github.com
 
 <br>
 <hr>
