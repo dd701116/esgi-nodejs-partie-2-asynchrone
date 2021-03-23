@@ -29,7 +29,7 @@ Enter your Heroku credentials.
 ...
 $ heroku create
 Creating arcane-lowlands-8408... done, stack is cedar
-http://arcane-lowlands-8408.herokuapp.com/ | git@heroku.com:arcane-lowlands-8408.git
+https://protected-woodland-06129.herokuapp.com | git@heroku.com:arcane-lowlands-8408.git
 Git remote heroku added
 $ git push heroku main
 ```
