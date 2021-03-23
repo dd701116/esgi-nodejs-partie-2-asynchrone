@@ -1,8 +1,8 @@
 
-const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
+const fetch = require('node-fetch')
 
 function initialization(port) {
-  console.log(`The server is ready : http://localhost:${port}/`);
+  console.log(`The server is ready : http://localhost:${port}/`)
 }
 
 async function curlCustom(url) {
@@ -10,12 +10,13 @@ async function curlCustom(url) {
     try {
         const res = await fetch(url);
         const body = await res.text();
-        return body;
+        return body
     } catch (e) {
         console.error(e);
+        return "Erreur :: curlCustom"
     }
   }else{
-    return "please provide a URL";
+    return "please provide a URL"
   }
 }
 
