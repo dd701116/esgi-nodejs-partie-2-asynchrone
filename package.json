@@ -1,0 +1,22 @@
+{
+  "name": "esgi-nodejs-partie-2-asynchrone",
+  "version": "1.0.0",
+  "description": "About Cours Node.jsCours Node.js - Partie 2 - Programmation asynchrone et requête à d'autres APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dd701116/esgi-nodejs-partie-2-asynchrone.git"
+  },
+  "author": "Dieunelson Dorcelus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dd701116/esgi-nodejs-partie-2-asynchrone/issues"
+  },
+  "homepage": "https://github.com/dd701116/esgi-nodejs-partie-2-asynchrone#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
