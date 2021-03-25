@@ -2,7 +2,7 @@
 About Cours Node.jsCours Node.js - Partie 2 - Programmation asynchrone et requête à d'autres APIs
 
 ### Q1 : Afficher dans la console la réponse textuelle à cette requête HTTP GET
-```
+```javascript
 const request = require('request');
 
 request('https://jsonplaceholder.typicode.com/photos/1', (error, response, body) => {
@@ -18,7 +18,7 @@ request('https://jsonplaceholder.typicode.com/photos/1', (error, response, body)
 ### Q2 : Sur la base de votre solution précédente, écrivez un programme Node.js qui:
 - envoie une requête HTTP GET à un serveur qui n'existe pas;
 - affiche dans la sortie standard l'erreur retournée par l'appel à request() suite à l'échec de cette requête.
-```
+```javascript
 const request = require('request');
 
 request('https://serveur-inexistant.xyz', (error, response, body) => {
@@ -32,7 +32,7 @@ request('https://serveur-inexistant.xyz', (error, response, body) => {
 ```
 
 ### Q3 : Cette fois-ci, nous allons utiliser le module npm node-fetch qui emploie les Promesses (Promise) au lieu des fonctions de callback.
-```
+```javascript
 const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 
 // TODO: compléter l'appel à fetch() pour afficher la réponse de l'API
@@ -43,7 +43,7 @@ fetch('https://jsonplaceholder.typicode.com/photos/1')
 ```
 
 ### Q4 : Sur la base de la solution à l'exercice précédent, nous allons envoyer une requête HTTP GET à un serveur qui n'existe pas et afficher dans la sortie standard l'erreur retournée par fetch() suite à l'échec de cette requête.
-```
+```javascript
 const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 
 // TODO: compléter l'appel à fetch() pour afficher la réponse de l'API
@@ -56,7 +56,7 @@ fetch('https://serveur-inexistant.xyz')
 ```
 
 ### Q5 : Cette fois-ci, nous allons le mot clé await au lieu de la fonction .then().
-```
+```javascript
 const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 
 (async () => {
@@ -70,7 +70,7 @@ const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 ### Q6 : Sur la base de votre solution précédente, écrivez un programme Node.js qui:
 - envoie une requête HTTP GET à un serveur qui n'existe pas;
 - affiche dans la sortie standard l'erreur retournée par await fetch() suite à l'échec de cette requête.
-```
+```javascript
 const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 
 (async () => {
@@ -91,7 +91,7 @@ const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 - sinon, il enverra la requête à l'aide de node-fetch et await;
 - en cas de succès, il affichera la réponse dans la sortie standard;
 - en cas d'échec, il affichera l'erreur obtenue dans la sortie d'erreurs.
-```
+```javascript
 const fetch = require('node-fetch'); // https://www.npmjs.com/package/node-fetch
 
 // TODO: afficher "please provide a URL" dans la sortie d'erreur si aucune URL n'a été fournie
